@@ -1,7 +1,7 @@
 
 body{
   background-color:pink;
-  
+
 }
 html {
   height: 100%;
@@ -20,7 +20,7 @@ img{
  height:500px;
  margin: 60px  auto 0 auto;
  border-radius: 50%;
-  
+
 }
 
 h1{
@@ -44,7 +44,7 @@ p{
   display:block;
   margin: 0 auto 50px auto;
   width: 400px;
-  
+
 }
 
 h3{
@@ -55,4 +55,10 @@ h3{
 ul,li{
   display:inline-block;
   text-decoration: underline;
+}
+
+footer{
+  background-color:aquamarine;
+  text-align:center;
+  width:100vw;
 }
