@@ -47,11 +47,10 @@ h3{
 
 
 #name{
-
     background-color: white;
     text-align:center;
     margin: 0 0 50px 0;
-    color: #8f99a4;
+    background-color:rgb(171, 112, 162);
     height: 70px;
     font-family: 'Rubik Pixels', cursive;
   }
