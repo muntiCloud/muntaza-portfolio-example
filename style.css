@@ -1,67 +1,19 @@
 
 body{
   background-color:rgb(194, 150, 187);
-
+  /* avoid extra margin and padding*/
   margin:0;
   padding: 0;
   min-height:100vh;
   max-width:100%;
-
 }
-
 
 html {
   height: 100%;
   width: 100%;
 }
 
-nav{
-  margin-left: 900px;
-}
-a{
-  margin: 0 20px 30px 20px;
-
-  font-size:1.5rem;
-  text-decoration:underline;
-}
-
-
-#profile-image{
- display:block;
-  width:500px;
- height:500px;
- margin: 60px  auto 0 auto;
-  border-radius: 50%;
-
-}
-
-.project-images img{
-
-display:block;
-width:500px;
- height:500px;
- margin: 60px  auto 0 auto;
-border-radius: 50%;
-
-}
-/*
-.mission-image{
-  width:300px;
-  height:300px;
-  margin-left: 30px;
-  margin-top: 80px
-} */
-#name{
-position: sticky;
-  background-color: white;
-  text-align:center;
-  margin: 0 0 50px 0;
-  color: #8f99a4;
-  height: 70px;
-  font-family: 'Rubik Pixels', cursive;
-}
-
-
+/* aligning h2 to the middle, with  margin 30px from top and bottom 50px */
 h2{
   text-align:center;
   margin: 30px 0 50px 0;
@@ -69,11 +21,6 @@ h2{
   text-decoration:underline;
 }
 
-.intro{
-  position: relative;
-  background-color: rgba(236, 221, 221, 0.1);
-  height:500px
-}
 hr{
  border-color: rgba(138, 40, 40, 0.1)!important;
 }
@@ -82,46 +29,8 @@ p{
   margin: 0 auto 50px auto;
   width: 400px;
   font-family: 'Roboto Mono', monospace;
+  /* adding padding from the background to make it readable */
   padding-top: 40px;
-}
-
-h3{
-  font-size:2rem;
-  font-style: italic;
-  margin:40px 0 0 0;
-}
-ul,li{
-  display:inline-block;
-  text-decoration: underline;
-  text-align:center;
-  font-family: 'Big Shoulders Display', cursive;
-
-}
-
-ul{
-  margin: 0 30px 30px 900px;
-}
-
-footer{
-  position: sticky;
-  bottom: 0;
-  background-color:rgb(171, 112, 162);
-  text-align:center;
-  width:100vw;
-  height:50px;
-  font-size:1.3rem;
-  margin-top: 60px
-}
-
-
-#map{
-  width: 600px; /* set the width of the map container */
-  height: 450px; /* set the height of the map container */
-  margin: auto; /* set the left and right margins to auto to center the map */
-
-  border: 1px solid black;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -131,26 +40,82 @@ h3{
   text-align: center;
   margin: 50px 0 50px 0;
   font-family: 'Big Shoulders Display', cursive;
-
+  font-style: italic;
 }
+
+/* ******************* header / Intro ************************** */
+
+
+#name{
+
+    background-color: white;
+    text-align:center;
+    margin: 0 0 50px 0;
+    color: #8f99a4;
+    height: 70px;
+    font-family: 'Rubik Pixels', cursive;
+  }
+
+nav{
+  margin-left: 900px;
+}
+
+/* using   display to display to align list horizontally */
+
+ul,li{
+  display:inline-block;
+  text-decoration: underline;
+  text-align:center;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+ul{
+  margin: 0 30px 30px 980px;
+}
+
+/* profile add display to take up full width, and center img with margin, style corners with border radius */
+#profile-image{
+  display:block;
+  width:500px;
+  height:500px;
+  margin: 60px  auto 0 auto;
+  border-radius: 50%;
+
+ }
+
+.intro{
+  background-color: rgba(236, 221, 221, 0.1);
+  height:500px
+}
+
+
+/* *******************Links************************** */
+
+
+a{
+  margin: 0 20px 30px 20px;
+  font-size:1.5rem;
+  text-decoration:underline;
+}
+
 
 a:link {
-  color: blue;
+  color: rgb(87, 87, 166);
 }
 
-/* Visited link */
+/* Highlight visited link */
 a:visited {
-  color: purple;
+  color: rgb(61, 116, 115);
 }
 
-/* Mouse over link */
+/*adding hoover */
 a:hover {
-  color: red;
+  color: rgba(139, 18, 10);
 }
 
-/* Selected link */
+/* Current selected link */
 a:active {
-  color: green;
+  color: rgb(78, 185, 179);
 }
 
 
@@ -158,7 +123,9 @@ a:active {
 
 .grid {
   width: 900px;
+  /* creating grid layout */
   display: grid;
+ /*  creating a grid column with four grid */
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
   margin: 10px 0 0px 220px;
@@ -182,20 +149,25 @@ a:active {
 }
 
 
+.project-images img{
+display:block;
+width:500px;
+height:500px;
+margin: 60px  auto 0 auto;
+border-radius: 30%;
 
+ }
 
-
-/* *******************Mission************************** */
+/* *******************Travel************************** */
 
 .travel {
 display: flex;
 align-items: center;
 }
 
-
 .travel img {
-width: 30%; /* adjust the width of the image as needed */
-margin-left: 40px; /* add some space between the image and article */
+width: 30%;
+margin-left: 40px;
 margin-top:80px;
 border-radius:20px;
 }
@@ -205,4 +177,32 @@ font-family: 'Roboto Slab', serif;
 font-size:1.3rem;
 width: 400px
 
+}
+
+/* ******************* Location ************************** */
+
+ /* setting width, height, then setting left and right margins to auto to center the map, border-radius to round up the corner a bit, box-shadow to  design the background   */
+
+#map{
+  width: 600px;
+  height: 450px;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* *******************Footer************************** */
+ /* sticky footer, bottom 0 to position it to  the bottom */
+
+footer{
+  position: sticky;
+  bottom: 0;
+  background-color:rgb(171, 112, 162);
+  text-align:center;
+  width:100vw;
+  height:50px;
+  font-size:1.3rem;
+  margin-top: 60px
 }
