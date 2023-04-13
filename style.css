@@ -72,22 +72,18 @@ ul,li{
 ul{
   margin: 0 30px 30px 900px;
 }
-/*
+
 footer{
   position: sticky;
   bottom: 0;
   background-color:aquamarine;
   text-align:center;
   width:100vw;
-  height:20px;
-} */
-
-footer {
-  height: 50px;
-  bottom: 0;
-  min-width: 100%;
-  background-color: aquamarine;
+  height:50px;
+  font-size:1.3rem;
+  margin-top: 60px
 }
+
 
 #map{
 
