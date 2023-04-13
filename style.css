@@ -1,6 +1,7 @@
 
 body{
-  background-color:pink;
+  background-color:rgb(194, 150, 187);
+
   margin:0;
   padding: 0;
   min-height:100vh;
@@ -14,6 +15,9 @@ html {
   width: 100%;
 }
 
+nav{
+  margin-left: 900px;
+}
 a{
   margin: 0 20px 30px 20px;
 
@@ -21,15 +25,32 @@ a{
   text-decoration:underline;
 }
 
-img{
+
+#profile-image{
  display:block;
   width:500px;
  height:500px;
  margin: 60px  auto 0 auto;
- border-radius: 50%;
+  border-radius: 50%;
 
 }
 
+.project-images img{
+
+display:block;
+width:500px;
+ height:500px;
+ margin: 60px  auto 0 auto;
+border-radius: 50%;
+
+}
+/*
+.mission-image{
+  width:300px;
+  height:300px;
+  margin-left: 30px;
+  margin-top: 80px
+} */
 #name{
 position: sticky;
   background-color: white;
@@ -37,7 +58,7 @@ position: sticky;
   margin: 0 0 50px 0;
   color: #8f99a4;
   height: 70px;
-
+  font-family: 'Rubik Pixels', cursive;
 }
 
 
@@ -46,14 +67,22 @@ h2{
   margin: 30px 0 50px 0;
   color: #8f99a4;
   text-decoration:underline;
-
 }
 
+.intro{
+  position: relative;
+  background-color: rgba(236, 221, 221, 0.1);
+  height:500px
+}
+hr{
+ border-color: rgba(138, 40, 40, 0.1)!important;
+}
 p{
   display:block;
   margin: 0 auto 50px auto;
   width: 400px;
-
+  font-family: 'Roboto Mono', monospace;
+  padding-top: 40px;
 }
 
 h3{
@@ -76,7 +105,7 @@ ul{
 footer{
   position: sticky;
   bottom: 0;
-  background-color:aquamarine;
+  background-color:rgb(171, 112, 162);
   text-align:center;
   width:100vw;
   height:50px;
@@ -86,8 +115,6 @@ footer{
 
 
 #map{
-
-
   width: 600px; /* set the width of the map container */
   height: 450px; /* set the height of the map container */
   margin: auto; /* set the left and right margins to auto to center the map */
@@ -95,8 +122,8 @@ footer{
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
 }
+
 
 h3{
   font-size:2.5rem;
@@ -105,5 +132,77 @@ h3{
   margin: 50px 0 50px 0;
   font-family: 'Big Shoulders Display', cursive;
 
+}
+
+a:link {
+  color: blue;
+}
+
+/* Visited link */
+a:visited {
+  color: purple;
+}
+
+/* Mouse over link */
+a:hover {
+  color: red;
+}
+
+/* Selected link */
+a:active {
+  color: green;
+}
+
+
+/* *******************Project************************** */
+
+.grid {
+  width: 900px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin: 10px 0 0px 220px;
+
+}
+.item {
+  background-color: #eee;
+  padding: 20px;
+  border-radius:20px;
+}
+.item:hover{
+  transform: scale(1.1);
+}
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+.item h2 {
+  margin-top: 20;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+/* *******************Mission************************** */
+
+.travel {
+display: flex;
+align-items: center;
+}
+
+
+.travel img {
+width: 30%; /* adjust the width of the image as needed */
+margin-left: 40px; /* add some space between the image and article */
+margin-top:80px;
+border-radius:20px;
+}
+article{
+margin-left: 30px;
+font-family: 'Roboto Slab', serif;
+font-size:1.3rem;
+width: 400px
 
 }
