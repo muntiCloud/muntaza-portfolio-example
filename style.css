@@ -1,15 +1,22 @@
 
 body{
   background-color:pink;
+  margin:0;
+  padding: 0;
+  min-height:100vh;
+  max-width:100%;
 
 }
+
+
 html {
   height: 100%;
   width: 100%;
 }
 
 a{
-  margin:70px 20px 0 0;
+  margin: 0 20px 30px 20px;
+
   font-size:1.5rem;
   text-decoration:underline;
 }
@@ -23,11 +30,13 @@ img{
 
 }
 
-h1{
+#name{
+position: sticky;
   background-color: white;
   text-align:center;
   margin: 0 0 50px 0;
   color: #8f99a4;
+  height: 70px;
 
 }
 
@@ -55,10 +64,50 @@ h3{
 ul,li{
   display:inline-block;
   text-decoration: underline;
+  text-align:center;
+  font-family: 'Big Shoulders Display', cursive;
+
 }
 
+ul{
+  margin: 0 30px 30px 900px;
+}
+/*
 footer{
+  position: sticky;
+  bottom: 0;
   background-color:aquamarine;
   text-align:center;
   width:100vw;
+  height:20px;
+} */
+
+footer {
+  height: 50px;
+  bottom: 0;
+  min-width: 100%;
+  background-color: aquamarine;
+}
+
+#map{
+
+
+  width: 600px; /* set the width of the map container */
+  height: 450px; /* set the height of the map container */
+  margin: auto; /* set the left and right margins to auto to center the map */
+
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+h3{
+  font-size:2.5rem;
+  text-decoration: underline rgb(139, 75, 129);
+  text-align: center;
+  margin: 50px 0 50px 0;
+  font-family: 'Big Shoulders Display', cursive;
+
+
 }
